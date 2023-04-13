@@ -32,22 +32,14 @@ int *sumOddAndEven(int *arr, int size) {
     return newArr;
 }
 
-void printArr(int *arr) {
-    cout << '[' << arr[0] << ", " << arr[1] << ']';
-}
-
 int main() {
     int example1[] {1, 2, 3, 4, 5, 6};
     int example2[] {-1, -2, -3, -4, -5, -6};
     int example3[] {0, 0};
     
-    int *sum1 = sumOddAndEven(example1, sizeof(example1)/sizeof(int));
-    int *sum2 = sumOddAndEven(example2, sizeof(example2)/sizeof(int));
-    int *sum3 = sumOddAndEven(example3, sizeof(example3)/sizeof(int));
+    int *sum = sumOddAndEven(example1, sizeof(example1)/sizeof(int));
 
-    printArr(sum1);
-    printArr(sum2);
-    printArr(sum3);
+    cout << '[' << sum[0] << ", " << sum[1] << ']';
 
     return 0;
 }
