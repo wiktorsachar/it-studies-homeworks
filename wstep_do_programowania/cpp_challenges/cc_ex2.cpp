@@ -34,6 +34,7 @@ int main()
         cin >> x;
         
         if (x > 0 && x < 10) {
+            //cout << endl << x; //action
             for (int i = 0; i < sizeof(array) / sizeof(int); i++) {
                 if (array[i] == x) {
                     cout << "The number " << x << " has index " << i;
@@ -43,8 +44,8 @@ int main()
             if (cin.fail()) {
                 cin.clear();
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
-                x = 0;
             }
+            x = 0;
         }
     }
     
